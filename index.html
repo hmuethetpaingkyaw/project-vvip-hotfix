@@ -269,7 +269,7 @@
     <div class="bg-heart" style="top: 20%; left: 50%; animation-delay: 8s;">😿</div>
 
     <div class="container">
-        <div id="mainText">Hsu, I'm really sorry <br>Please forgive me 🥺</div>
+        <div id="mainText">Hsu kalay, I'm really sorry <br>Please forgive me 🥺</div>
         <div class="buttons">
             <button id="yesBtn">Okay, I forgive you 😏</button>
             <button id="noBtn">No, I'm still angry 😠</button>
@@ -314,7 +314,7 @@
         function createHeart() {
             const heart = document.createElement('div');
             heart.className = 'heart';
-            heart.textContent = ['❤️', '💖', '💕', '💗', '💝', '🥰', '😍'][Math.floor(Math.random() * 7)];
+            heart.textContent = ['😾', '😾', '😾', '😾', '😾', '😾', '😾'][Math.floor(Math.random() * 7)];
             heart.style.left = Math.random() * window.innerWidth + 'px';
             heart.style.top = window.innerHeight + 'px';
             document.body.appendChild(heart);
@@ -398,9 +398,9 @@
                 setTimeout(() => mainText.classList.remove('shake'), 500);
                 
                 if (noClickCount <= 5) {
-                    clickCount.innerHTML = `just click YES! 🥺 (Attempts: ${noClickCount})`;
+                    clickCount.innerHTML = `Naw Naw! 🥺 (Attempts: ${noClickCount})`;
                 } else if (noClickCount <= 10) {
-                    clickCount.innerHTML = `Naw Naw !  🥺 (Attempts: ${noClickCount})`;
+                    clickCount.innerHTML = `just click YES !  🥺 (Attempts: ${noClickCount})`;
                 } else {
                     clickCount.innerHTML = `Hint 🥺! (Attempts: ${noClickCount})`;
                 }
